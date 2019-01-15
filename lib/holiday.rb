@@ -12,17 +12,17 @@ def second_supply_for_fourth_of_july(holiday_hash)
      },
      :fall => {
        :thanksgiving => ["Turkey"]
-  #   },
-  #   :spring => {
-  #     :memorial_day => ["BBQ"]
-  #   }
-  # }
+     },
+     :spring => {
+      :memorial_day => ["BBQ"]
+     }
+   }
   # return the second element in the 4th of July array
   holiday_hash.each do |seasons, data|
     data.each do |attribute, value|
       if attribute == :summer 
         value.each do |event|
-          event == fourth_of_july[1]
+          event == :fourth_of_july[1]
         end
       end
     end
